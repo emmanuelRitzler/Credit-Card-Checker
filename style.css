@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: OCRB;
+    src: url(Fonts/OCRB\ Regular/OCRB_Regular.otf)
+}
+
+h1 {
+    font-family: OCRB, sans-serif;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 2rem;
+}
+
+main {
+    height: 360px;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#card-frame {
+    background-color: #144A94;
+    padding: 30px;
+    color: #FFFFFF;
+    height: 280px;
+    width: 480px;
+    border-radius: 10px;
+    font-family: OCRB, sans-serif;
+}
+
+#card-chip {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+#card-number {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    font-family: OCRB, sans-serif;
+    color: rgb(162, 162, 162);
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 28px;
+}
+
+#card-date {
+    height: auto;
+    font-family: OCRB, sans-serif;
+    color: #FFFFFF;
+    padding-left: 35px;
+    margin-top: 30px;
+} 
+
+#cardholder-name {
+    color: #FFFFFF;
+    margin-top: 0px;
+    font-family: OCRB, sans-serif;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#dollar-logo {
+    width: auto;
+    height: 40px;
+}
+
+#check-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    text-align: center;
+    width: 220px;
+    height: auto;
+    padding: 16px;
+    font-family: OCRB, sans-serif;
+    background-color: #144A94;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 50px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #236ed6;
+    }
+}
+
+#message {
+    font-family: OCRB, sans-serif;
+    letter-spacing: -2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 550px) {
+    main {
+        padding: 20px;
+        height: 320px;
+    }
+    #card-frame {
+    background-color: #144A94;
+    padding: 30px;
+    color: #FFFFFF;
+    height: 220px;
+    width: 380px;
+    border-radius: 10px;
+    font-family: OCRB, sans-serif;
+    }
+    #card-chip {
+        display: flex;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    #card-date {
+        font-size: 0.8rem;
+        padding-left: 28px;
+    }
+    #cardholder-name {
+        font-size: 0.8rem;
+    }
+    #dollar-logo {
+        position: absolute;
+        bottom: 54.5%;
+        width: auto;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    main {
+        padding: 20px;
+        height: 280px;
+    }
+    h2 {
+        font-size: 0.8rem;
+    }
+    #card-frame {
+    background-color: #144A94;
+    padding: 30px;
+    color: #FFFFFF;
+    height: 180px;
+    width: 380px;
+    border-radius: 10px;
+    font-family: OCRB, sans-serif;
+    }
+    #card-chip {
+        display: flex;
+        height: 25px;
+        width: 25px;
+        margin-top: 16px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    #card-number {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    font-family: OCRB, sans-serif;
+    color: rgb(162, 162, 162);
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 14px;
+    font-size: 0.8rem;
+}
+    #card-date {
+        font-size: 0.6rem;
+        padding-left: 21px;
+    }
+    #cardholder-name {
+        font-size: 0.6rem;
+    }
+    #dollar-logo {
+        position: absolute;
+        bottom: 58%;
+        width: auto;
+        height: 25px;
+    }
+}

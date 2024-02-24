@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Credit Card Checker</title>
 </head>
 <body>
+    <header>
+        <h1>CREDIT CARD CHECKER</h1>
+    </header>
+    <main>
+        <div id="card-frame">
+            <h2>Credit Card</h2>
+            <img id="card-chip" src="Images/puce.png" alt="credit card chip">
+            <label for="card-number"></label>
+            <input type="number" id="card-number" name="card-number" placeholder="Enter card number" oninput="limitLength(this, 16)">
+            <span id="card-date">00/00</span>
+            <h3 id="cardholder-name">Jane Doe</h3>
+            <div id="logo-container">
+                <img id="dollar-logo" src="Images/dollar (1).png" alt="dollar logo">
+            </div>
+        </div>
+    </main>
+    <div id="check-button">
+        <button id="button">Check your card</button>
+    </div>
+    <p id="message"></p>
     <script src="main.js"></script>
 </body>
 </html>
