@@ -41,7 +41,7 @@ main {
     width: 40px;
     margin-top: 30px;
     margin-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #card-number {
@@ -75,6 +75,8 @@ main {
 }
 
 #dollar-logo {
+    position: absolute;
+    bottom: 52.5%;
     width: auto;
     height: 40px;
 }
