@@ -55,6 +55,17 @@ main {
     margin-bottom: 28px;
 }
 
+#bottom-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#namedate {
+    width: 30%;
+}
+
 #card-date {
     height: auto;
     font-family: OCRB, sans-serif;
@@ -69,16 +80,10 @@ main {
     font-family: OCRB, sans-serif;
 }
 
-#logo-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
 #dollar-logo {
-    position: absolute;
-    bottom: 52.5%;
-    width: auto;
+    width: 40px;
     height: 40px;
+    margin-top: 12px;
 }
 
 #check-button {
@@ -134,6 +139,15 @@ button {
         margin-left: 15px;
         margin-bottom: 10px;
     }
+    #bottom-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #namedate {
+        width: 30%;
+    }
     #card-date {
         font-size: 0.8rem;
         padding-left: 28px;
@@ -142,10 +156,9 @@ button {
         font-size: 0.8rem;
     }
     #dollar-logo {
-        position: absolute;
-        bottom: 54.5%;
         width: auto;
         height: 30px;
+        margin-top: 8px;
     }
 }
 @media only screen and (max-width: 375px) {
@@ -183,7 +196,16 @@ button {
     border: none;
     margin-bottom: 14px;
     font-size: 0.8rem;
-}
+    }
+    #bottom-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #namedate {
+        width: 30%;
+    }
     #card-date {
         font-size: 0.6rem;
         padding-left: 21px;
@@ -192,9 +214,8 @@ button {
         font-size: 0.6rem;
     }
     #dollar-logo {
-        position: absolute;
-        bottom: 58%;
         width: auto;
         height: 25px;
+        margin-top: 8px;
     }
 }
